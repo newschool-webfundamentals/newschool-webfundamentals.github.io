@@ -1,5 +1,5 @@
 # New School - Web Fundamentals Syllabus
-This is a repository for the Spring 2016 web funamentals class in the Journalism + Design program at Eugene Lang College, The New School for Liberal Arts. All assignments will be posted to this README document. In addition, slides from classes can be found at [newschool-webfundamentals.github.io](http://newschool-webfundamentals.github.io)
+This is a repository for the Spring 2016 web funamentals class in the Journalism + Design program at Eugene Lang College, The New School for Liberal Arts. All assignments will be posted to this repository's [wiki](https://github.com/newschool-webfundamentals/newschool-webfundamentals.github.io/wiki). In addition, slides from classes can be found at [newschool-webfundamentals.github.io](http://newschool-webfundamentals.github.io)
 
 ## Course Description
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
