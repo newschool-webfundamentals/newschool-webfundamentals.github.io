@@ -41,6 +41,7 @@ The website must include:
 Students will reimagine a feature article–to be hosted on their portfolio website, which will be built and maintained throughout the duration of the course. Students will not be expected to report a new feature article, but to bring to life a previously published piece. They are expected to treat this article as if it were to be published online in a publication such as the New York Times, New Yorker, NPR, The Guardian–today. The feature should contain:
 
 - A captivating introduction (hero image, video, etc.)
+  - [NYTimes - A Gift to New York, in time for the Pope](http://www.nytimes.com/interactive/2015/09/17/nyregion/st-patricks-cathedral-pope-francis-visit.html)
   - [NYTimes - Rural voters can swing the iowa caucuses](http://www.nytimes.com/interactive/2016/01/28/us/elections/rural-iowa-election.html?_r=0)
   - [NPR - Life after death](http://apps.npr.org/life-after-death/)
   - [NSFP - Lonely, lazy, stoned & broke](http://journalismdesign.com/lifeatlang2015/)
@@ -80,7 +81,6 @@ Note: Assignments are subject to change based on the speed of the course. All as
 #### Week 1, Feb. 4
 Topic: Introduction, syllabus handed out
 *What is code? What is GitHub?*
-
 Assignment:
-300-500 word written assignment,  prompt provided
+300-500 word written assignment,  prompt provided.
 Read  “How the World Wide Web Works”
