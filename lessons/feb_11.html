@@ -1,0 +1,336 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+    <title>Web Fundamentals</title>
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+		<link rel="stylesheet" href="../css/reveal.css">
+		<link rel="stylesheet" href="../css/theme/black.css" id="theme">
+
+		<!-- Code syntax highlighting -->
+		<link rel="stylesheet" href="../lib/css/zenburn.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+	</head>
+
+	<body>
+		<div class="reveal">
+
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides">
+				<section>
+          <h2>Web Fundamentals</h2>
+					<p>
+            <small>
+              Taught by
+              <a href="http://www.aaackerman.nyc">Alexandra Ackerman</a>
+              <br>
+              Code and assignments available at
+              <a href="https://github.com/newschool-webfundamentals">https://github.com/newschool-webfundamentals</a>
+              <br>
+              Presentations available at
+              <a href="http://newschool-webfundamentals.github.io">newschool-webfundamentals.github.io</a>
+            </small>
+        </section>
+        <section>
+          <h3>Agenda</h3>
+          <ul>
+            <li>
+              Warm up
+            </li>
+            <li>
+              Introduction to the Command Line
+            </li>
+            <li>
+              Introduction to git and GitHub
+            </li>
+            <li>
+              Use HTML to create your first webpage
+            </li>
+            <li>
+              Go over homework
+            </li>
+          </ul>
+        </section>
+
+        <section>
+          <h3>Warm up</h3>
+          <p>Divide into three groups. Discuss a question for 3 minutes then have someone present it to the class.</p>
+          <ul>
+            <li>
+              What is the difference between HTML and HTTP?
+            </li>
+            <li>
+              What is a URL and what happens when I visit one?
+            </li>
+            <li>
+              What does a web browser do and how does it relate to the two previous questions?
+            </li>
+          </ul>
+        </section>
+
+        <section>
+          <h3>Class goals</h3>
+          <p>Understand how the world wide web works</p>
+          <p>Read and write HTML, CSS and JavaScript</p>
+          <p>Create your own captivating websites</p>
+        </section>
+
+
+        <section>
+          <h3>Today's goals</h3>
+          <p>Understand the advantages of using the command line and be able to use key commands. </p>
+          <p>Define version control, git branches and explain why git is an integral part of building websites.</p>
+          <p>Build and host your first webpage using GitHub Pages</p>
+        </section>
+
+        <section>
+          <h3>Whats and whys of the Command Line</h3>
+          <img src="https://i.imgur.com/5fPHWVh.png">
+        </section>
+
+        <section>
+          <p>Websites and web applications are made of files and folders with code and information, hosted on servers.</p>
+        </section>
+
+        <section>
+          <p>Command line is a text interface that takes commands and speaks directly to operating system</p>
+          <p>There are commands for creating and altering files and folders.</p>
+        </section>
+
+        <section>
+          <h3>GUI (graphical user interface)</h3>
+          <img width="70%" height="70%" src="https://i.imgur.com/LgmXYu9.png">
+        </section>
+
+        <section>
+          <h3>Why do developers use the command line?</h3>
+          <li class="fragment">
+            It's efficient – you can perform direct actions quickly
+          </li>
+          <li class="fragment">
+            It's precise – we tell the computer how to act
+          </li>
+          <li class="fragment">
+            Use your mouse less, don't interact with GUI
+          </li>
+        </section>
+
+        <section>
+          <h3>Command Line takeaways</h3>
+          <ul>
+            <li>
+              What is a path and what is the current path?
+            </li>
+            <li>
+              What is the difference between an absolute and relative path?
+            </li>
+            <li>
+              What is a directory and how do you view the contents of a directory?
+            </li>
+            <li>
+              How do you navigate to different directories?
+            </li>
+            <li>
+              Create files within directories
+            </li>
+            <li>
+              Copy, move and delete files
+            </li>
+          </ul>
+        </section>
+
+        <section>
+          <h3>What is a path?</h3>
+          <p>Directions from one place to another, from one file to another</p>
+        </section>
+
+        <section>
+          <h3>Absolute path</h3>
+          <img src="https://i.imgur.com/MFYL01i.png" height="70%" width="70%">
+        </section>
+
+        <section>
+          <h3>Relative path</h3>
+          <img src="https://i.imgur.com/Pjn31vb.png" height="70%" width="70%">
+        </section>
+
+        <section>
+          <p>Where the heck am I? ("print working directory")</p>
+          <code>
+            pwd
+          </code>
+          <img src="https://i.imgur.com/CgbsNhb.png">
+        </section>
+
+        <section>
+          <p>What's around me? ("list directory contents")</p>
+          <code>
+            ls
+          </code>
+          <img src="https://i.imgur.com/0BEeOxA.png">
+        </section>
+
+        <section>
+          <p>How do I get to where I want to go? ("change directory")</p>
+          <code>
+            cd
+          </code>
+          <img src="https://i.imgur.com/qURBgRF.png">
+        </section>
+
+        <section>
+          <p>Absolute path (~ root directory)</p>
+          <code>
+            cd ~/directory/inner_folder
+          </code>
+          <img src="https://i.imgur.com/QYuO7nL.png">
+        </section>
+
+        <section>
+          <p>Relative path (one dot is current directory, two dots is up a level)</p>
+          <code>
+            cd ./lessons
+            <br>
+            cd ..
+          </code>
+        </section>
+
+        <section>
+          <p>Go up a level</p>
+          <code>
+            cd ..
+          </code>
+          <img src="https://i.imgur.com/llRt2xF.png">
+        </section>
+
+        <section>
+          <p>Now that we know how to navigate directories, how do we create folders and files?</p>
+        </section>
+
+        <section>
+          <p>Make a directory</p>
+          <code>
+            mkdir
+          </code>
+          <img src="https://i.imgur.com/HjxVlSZ.png">
+        </section>
+        <section>
+          <p>Make a file</p>
+          <code>
+            touch
+          </code>
+          <img src="https://i.imgur.com/HTcgITh.png">
+        </section>
+
+        <section>
+          <p>move (or rename)</p>
+          <code>
+            mv file_to_move where_to_move
+          </code>
+          <img src="https://i.imgur.com/N2bud3M.png">
+        </section>
+
+
+        <section>
+          <p>remove file</p>
+          <code>
+            rm file_name
+          </code>
+          <img src="https://i.imgur.com/m6sgBu1.png">
+        </section>
+
+        <section>
+          <p>Those are the basics of what you'll need to create files and move around directories when building websites.</p>
+        </section>
+
+        <section>
+          <p>Let's practice building a basic project structure together.</p>
+          <img src="https://i.imgur.com/O5ww3hw.png">
+        </section>
+
+        <section>
+          <p>Now that we have a basic website folder structure, let's use git and GitHub to make it go live.</p>
+        </section>
+
+        <section>
+          <h3>Git key takeaways</h3>
+          <ul>
+            <li>
+              What is "version control" and why should you care?
+            </li>
+            <li>
+              What is the difference between git and GitHub?
+            </li>
+            <li>
+              How do I save versions and revisions of my code?
+            </li>
+            <li>
+              What is a branch and what is merging?
+            </li>
+            <li>
+              How do I send and receive information from GitHub?
+            </li>
+          </ul>
+        </section>
+
+        <section>
+          <p>Now that we have all of these files and folders, we need a way to keep track of them and how they change over time.</p>
+        </section>
+
+        <section>
+          <p>Git is a distributed version control system, meaning that it keeps track of revisions over time–it allows you to see, go back to, and even revert changes.
+        </section>
+
+        <section>
+          <img src="https://i.imgur.com/HIn4aN9.png">
+        </section>
+
+        <section>
+          <p>Git takes snapshots of the changes in your code. These are called "commits."</p>
+          <img src="https://i.imgur.com/MpPtEhk.gif" width="70%" height="70%">
+        </section>
+			</div>
+		</div>
+
+		<script src="../lib/js/head.min.js"></script>
+		<script src="../js/reveal.js"></script>
+
+		<script>
+			// Full list of configuration options available at:
+			// https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+
+				transition: 'slide', // none/fade/slide/convex/concave/zoom
+
+				// Optional reveal.js plugins
+				dependencies: [
+					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'plugin/zoom-js/zoom.js', async: true },
+					{ src: 'plugin/notes/notes.js', async: true }
+				]
+			});
+
+		</script>
+	</body>
+</html>
