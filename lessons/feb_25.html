@@ -1,0 +1,252 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+    <title>Web Fundamentals</title>
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+		<link rel="stylesheet" href="../css/reveal.css">
+		<link rel="stylesheet" href="../css/theme/black.css" id="theme">
+
+		<!-- Code syntax highlighting -->
+		<link rel="stylesheet" href="../lib/css/zenburn.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+	</head>
+
+	<body>
+		<div class="reveal">
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides">
+				<section>
+              <h2>Web Fundamentals</h2>
+    					<p>
+                <small>
+                  Taught by
+                  <a href="http://www.aaackerman.nyc">Alexandra Ackerman</a>
+                  <br>
+                  Code and assignments available at
+                  <a href="https://github.com/newschool-webfundamentals">https://github.com/newschool-webfundamentals</a>
+                  <br>
+                  Presentations available at
+                  <a href="http://newschool-webfundamentals.github.io">newschool-webfundamentals.github.io</a>
+                </small>
+            </section>
+            <section>
+              <h3>Agenda</h3>
+              <ul>
+                <li>
+                  Warm up
+                </li>
+                <li>
+                  Introduction to CSS
+                </li>
+                <li>
+                  Build and style a website together
+                </li>
+                <li>
+                  Build an about me page
+                </li>
+                <li>
+                  Discuss midterm
+                </li>
+              </ul>
+            </section>
+
+            <section>
+              <p>
+                Originally wanted to do retrospective today, but since midterms are due next week, I want to have as much time as possible with CSS.
+              </p>
+            </section>
+
+            <section>
+              <p>
+                Midterms are due <i><u>in class March 3</u></i>. Instead of everyone doing demos, we'll do our retrospective, get midterms hosted online, and we'll talk about final projects.
+              </p>
+            </section>
+
+            <section>
+              <h3>Warm up</h3>
+              <p>Build this webpage.</p>
+              <img src="https://i.imgur.com/4QYeaZq.png" height="70%" width="70%">
+            </section>
+
+            <section>
+              <p>Last class we discussed structuring the content of webpages with HTML.</p>
+              <p>This week, we'll go over styling our pages.</p>
+            </section>
+
+            <section>
+              <h1>CSS</h1>
+              <p>Cascading Style Sheets</p>
+            </section>
+
+            <section>
+              <h3>Learning Objectives</h3>
+              <ul>
+                <li>Distinguish between block and inline elements</li>
+                <li>Construct a CSS rule using selectors, declarations, properties, and values</li>
+                <li>Describe pros and cons of stylesheets, styles in the head, and in-line styles</li>
+                <li>Define "cascading" in the context of CSS specificity</li>
+                <li>Demonstrate the use of class and ID selectors to target specific elements</li>
+              </ul>
+            </section>
+
+            <section>
+              <h3>CSS</h3>
+              <p>Describes rules for how HTML elements should be displayed on a screen.</p>
+            </section>
+
+            <section>
+              <p>HTML elements sit within invisible boxes</p>
+              <img src="https://i.imgur.com/OKnoYYo.png" height="70%" width="70%">
+            </section>
+
+            <section>
+              <p>Red outlines are block elements, blue are inline elements.</p>
+              <img src="https://i.imgur.com/KR9ndU7.png" height="70%" width="70%">
+            </section>
+
+            <section>
+              <p>
+                Block elements look like they display on a new line.</br>
+                <code>&lt;h1&gt;, &lt;p&gt;, &lt;div&gt;</code>
+              </p>
+              <img src="https://i.imgur.com/KR9ndU7.png" height="70%" width="70%">
+            </section>
+
+            <section>
+              <p>
+                Inline elements flow within the text & don't start a new line.</br>
+                <code>&lt;a&gt;, &lt;img&gt;, &lt;i&gt;, &lt;b&gt;</code>
+              </p>
+              <img src="https://i.imgur.com/KR9ndU7.png" height="70%" width="70%">
+            </section>
+
+            <section>
+              <p>
+                CSS creates rules for how different HTML elements (the boxes) are presented
+              </p>
+              <img src="https://i.imgur.com/OcDgrIb.png" height="70%" width="70%">
+              <small>Headers have a black background and white Helvetica font</small>
+            </section>
+
+            <section>
+              <p>There are many different styles you can control in these boxes:</p>
+              <ul>
+                <li class="fragment">Height and width</li>
+                <li class="fragment">Borders - color, shape, width</li>
+                <li class="fragment">Background color and images</li>
+                <li class="fragment">Position</li>
+                <li class="fragment">Typeface, color, size</li>
+              </ul>
+            </section>
+
+            <section>
+              <h3>Ok ok, so how do we do it?</h3>
+            </section>
+
+            <section>
+              <p>CSS rules contain two parts - a <b>selector</b> and a <b>declaration</b></p>
+              <img src="https://i.imgur.com/5abeZXL.png">
+            </section>
+
+            <section>
+              <p>Selectors describe the element that the style rule should apply to.</p>
+              <img src="https://i.imgur.com/5abeZXL.png">
+            </section>
+
+            <section>
+              <p>Declarations refer to how the selector element should be styled.</p>
+              <img src="https://i.imgur.com/5abeZXL.png">
+              <small>Declarations have two parts: a property and a value</small>
+            </section>
+
+            <section>
+              <p>Properties describe what aspect of the element should be styled, and values describe how.</p>
+              <img src="https://i.imgur.com/OnrNAEZ.png">
+            </section>
+
+            <section>
+              <img src="https://i.imgur.com/OcDgrIb.png" height="60%" width="60%">
+              <img src="https://i.imgur.com/3vCIqFe.png">
+            </section>
+
+            <section>
+              <p>There are three ways to write CSS rules into a page.</p>
+              <ul>
+                <li>In-line style</li>
+                <li>Head style tags</li>
+                <li>Stylesheets</li>
+              </ul>
+            </section>
+
+            <section>
+              <p>In-line style are written by adding a style attribute to each element</p>
+              <img src="https://i.imgur.com/Nuvr1y7.png">
+              <img src="https://i.imgur.com/5r1oDMD.png" height="60%" width="60%">
+            </section>
+
+            <section>
+              <p>Style tags in the head describe style across the whole page</p>
+              <img src="https://i.imgur.com/IKyLwtp.png" height="40%" width="40%">
+              <img src="https://i.imgur.com/XDNLdw1.png" height="50%" width="50%">
+            </section>
+
+            <section>
+              <p>Stylesheets are their own files and can be included in any html file.</p>
+              <img src="https://i.imgur.com/QqyJnYw.png" height="60%" width="60%">
+              <img src="https://i.imgur.com/GOrDWAj.png" height="50%" width="50%">
+            </section>
+
+            <section>
+              <p>In the class, you should keep all CSS in stylesheets. Why do you think developers prefer this?</p>
+              <ul>
+                <li class="fragment">Style applied across same elements</li>
+                <li class="fragment">Can use same stylesheet for multiple pages</li>
+                <li class="fragment">Faster - user can download styles once</li>
+              </ul>
+            </section>
+			</div>
+		</div>
+
+		<script src="../lib/js/head.min.js"></script>
+		<script src="../js/reveal.js"></script>
+
+		<script>
+			// Full list of configuration options available at:
+			// https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+
+				transition: 'slide', // none/fade/slide/convex/concave/zoom
+
+				// Optional reveal.js plugins
+				dependencies: [
+					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'plugin/zoom-js/zoom.js', async: true },
+					{ src: 'plugin/notes/notes.js', async: true }
+				]
+			});
+
+		</script>
+	</body>
+</html>

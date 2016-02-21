@@ -1,0 +1,17 @@
+h1, h2, h3, h4, h5, h6 {
+  background: black;
+  color: white;
+  font-family: Helvetica;
+}
+
+p {
+  background: blue;
+}
+
+body, h1, h2, img, p {
+  border: 1px solid red;
+}
+
+i, a {
+  border: 1px solid blue;
+}
