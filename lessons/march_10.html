@@ -1,0 +1,264 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Web Fundamentals</title>
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+    <link rel="stylesheet" href="../css/reveal.css">
+    <link rel="stylesheet" href="../css/theme/black.css" id="theme">
+
+    <!-- Code syntax highlighting -->
+    <link rel="stylesheet" href="../lib/css/zenburn.css">
+
+    <!-- Printing and PDF exports -->
+    <script>
+      var link = document.createElement( 'link' );
+      link.rel = 'stylesheet';
+      link.type = 'text/css';
+      link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+      document.getElementsByTagName( 'head' )[0].appendChild( link );
+    </script>
+
+    <!--[if lt IE 9]>
+    <script src="lib/js/html5shiv.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+    <div class="reveal">
+
+      <!-- Any section element inside of this container is displayed as a slide -->
+      <div class="slides">
+        <section>
+          <h2>Web Fundamentals</h2>
+          <p>
+            <small>
+              Taught by
+              <a href="http://www.aaackerman.nyc">Alexandra Ackerman</a>
+              <br>
+              Code and assignments available at
+              <a href="https://github.com/newschool-webfundamentals">https://github.com/newschool-webfundamentals</a>
+              <br>
+              Presentations available at
+              <a href="http://newschool-webfundamentals.github.io">newschool-webfundamentals.github.io</a>
+            </small>
+           </p>
+        </section>
+
+        <section>
+          <h3>Agenda</h3>
+          <ul>
+            <li>
+              Warm up
+            </li>
+            <li>
+              Introduction to building mobile-friendly sites
+            </li>
+            <li>
+              Live-code a website using media queries
+            </li>
+            <li>
+              Build your own responsive site lab
+            </li>
+            <li>
+              Discuss homework
+            </li>
+          </ul>
+        </section>
+
+        <section>
+          <h3>Warm up</h3>
+          <p>We're confident with writing HTML & CSS, but we need to practicing reading it.</p>
+        </section>
+
+        <section>
+          <p>What's wrong with this <strike>picture</strike> code?</p>
+          <ul>
+            <li>
+              Navigate to the directory on your computer where you keep your code
+            </li>
+            <li>
+              Clone this repository:
+              <a href="http://github.com/newschool-webfundamentals/warm-up-10" target="_blank">
+                github.com/newschool-webfundamentals/warm-up-10
+              </a>
+            </li>
+            <li>
+              Open the downloaded files, diagnose the problems with the code, and fix them!
+            </li>
+          </ul>
+        </section>
+
+        <section>
+          <a href="http://newschool-webfundamentals.github.io/warm-up-10" target="_blank">
+            <img src="https://i.imgur.com/E8uhfaM.png">
+          </a>
+          <small>
+            <code>git clone https://github.com/newschool-webfundamentals/warm-up-10.git</code>
+          </small>
+          </br>
+        </section>
+
+        <section>
+          <h3>Introduction to responsive design</h3>
+          <p>Why should we design websites for different devices?</p>
+        </section>
+
+        <section>
+          <p>Nearly 2/3 of Americans have smartphones, 68% of which use their phone at least occasionally to follow along with breaking news events</p>
+          <img src="https://i.imgur.com/wwd9hOT.png" height="60%" width="60%">
+          </br>
+          <small><a href="http://www.pewinternet.org/2015/04/01/us-smartphone-use-in-2015/">PEW research center</a></small>
+        </section>
+
+        <section>
+          <p><i>The primary design principle underlying the Web's usefulness and growth is universality.</i></p>
+          </br>
+          <small>- Tim Berners-Lee (created the World Wide Web)</small>
+        </section>
+
+        <section>
+          <a href="http://design.google.com/resizer/#url=http%3A%2F%2Fwww.newyorker.com%2F" target="_blank">
+            <img src="https://i.imgur.com/4xFebzX.png">
+          </a>
+        </section>
+
+        <section>
+          <p>So far, we haven't been conscious of how content looks on different screen sizes. Today, we'll fix that.</p>
+          <a href="http://design.google.com/resizer/#url=https%3A%2F%2Fnewschool-webfundamentals.github.io%2Fwarm-up-10%2F" target="_blank">
+            <img src="https://i.imgur.com/aTqMO1y.png">
+          </a>
+        </section>
+
+        <section>
+          <p>Web developers have 3 ways they make content look good in different envrionments</p>
+          <ul>
+            <li>Fluid layouts</li>
+            <li>Adaptive design</li>
+            <li>Responsive design</li>
+          </ul>
+        </section>
+
+        <section>
+          <h3>Fluid layouts</h3>
+          <p>Typically refers to a grid system</p>
+          <img src="https://i.imgur.com/85Xc1o1.png" height="70%" width="70%">
+          <small>We'll go over grids next class!</small>
+        </section>
+
+        <section>
+          <p>
+            Adaptive and responsive sites both change appearance based on the browser environment they are being viewed on (usually caring about width of screen)
+          </p>
+        </section>
+
+        <section>
+          <h3>Adaptive sites</h3>
+          <p>
+            Adapt to the width of browsers at
+            <b><i>specific points</i></b>
+          </p>
+          <a href="https://codepen.io/css-tricks/embed/RWYoYB?height=268&theme-id=1&slug-hash=RWYoYB&default-tab=result&user=css-tricks#0" target="_blank">
+            Example
+          </a>
+        </section>
+
+        <section>
+          <p>Responsive websites respond to the size of the browser at any given point. No matter what the browser width may be, the site adjusts its layout</p>
+        </section>
+
+        <section>
+          <h3>Responsive sites</h3>
+          <p>Are more universal, but tricky to pull off.</p>
+          <a href="https://codepen.io/css-tricks/embed/meGOWx?height=268&theme-id=1&slug-hash=meGOWx&default-tab=result&user=css-tricks#0" target="_blank">
+            Example
+          </a>
+        </section>
+
+        <section>
+          <p>Today we're going to talk about adaptive design, because we <i>know</i> the context and size of the device we're designing for: phones</p>
+        </section>
+
+        <section>
+          <p>Knowing this context, we create <i>break points</i> using CSS for where design breaks down.</p>
+          <img src="https://i.imgur.com/gSHSoEl.png" height="60%" width="60%">
+        </section>
+
+        <section>
+          <p>We make <i>break points with media queries</i>.
+          <img src="https://i.imgur.com/K6Xv9tv.png">
+        </section>
+
+        <section>
+          <img src="https://i.imgur.com/uDlYyPT.png">
+          <a href="http://codepen.io/anon/pen/QNybXY" target="_blank">
+            Example
+          </a>
+        </section>
+
+        <section>
+          <h3>Keys to mobile design</h3>
+          <ul>
+            <li>Who is your audience?
+              <span class="fragment">--> People who read news</span>
+            </li>
+            <li>
+              How will they use the site?
+              <span class="fragment">--> To read</span>
+            </li>
+            <li>
+              Context (what device?)
+              <span class="fragment">--> Desktops or phones</span>
+            </li>
+            <li>
+              Content (what material needs to adapt?)
+              <span class="fragment">--> Images and text</span>
+            </li>
+          </ul>
+        </section>
+
+        <section>
+          <p>Let's fix the
+            <a href="http://newschool-webfundamentals.github.io/warm-up-10" target="_blank">site</a>
+            we used in our warm up activity together.
+          </p>
+        </section>
+
+        <section>
+          <h3>Lab</h3>
+
+        </section>
+      </div>
+      <!-- End Slides -->
+    </div>
+
+    <script src="../lib/js/head.min.js"></script>
+    <script src="../js/reveal.js"></script>
+
+    <script>
+      // Full list of configuration options available at:
+      // https://github.com/hakimel/reveal.js#configuration
+      Reveal.initialize({
+        controls: true,
+        progress: true,
+        history: true,
+        center: true,
+
+        transition: 'slide', // none/fade/slide/convex/concave/zoom
+
+        // Optional reveal.js plugins
+        dependencies: [
+          { src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+          { src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+          { src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+          { src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+          { src: 'plugin/zoom-js/zoom.js', async: true },
+          { src: 'plugin/notes/notes.js', async: true }
+        ]
+      });
+
+    </script>
+  </body>
+</html>
