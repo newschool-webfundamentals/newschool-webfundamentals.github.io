@@ -55,7 +55,7 @@
               Warm up
             </li>
             <li>
-              HTML & CSS review
+              HTML & CSS recap
             </li>
             <li>
               Introduction to JavaScript
@@ -103,6 +103,152 @@
         </section>
 
         <section>
+          <h3>HTML recap</h3>
+          <ul>
+            <li class="fragment">
+              What is HTML?
+            </li>
+            <li class="fragment">
+              What is the difference between the head and the body of a document?
+            </li>
+          </ul>
+          <img class="fragment" src="https://i.imgur.com/TvH9JPS.png">
+        </section>
+
+        <section data-markdown>
+           <script type="text/template">
+             Name these items:
+              - `<div class="bio">My name...</div>`
+              - `<div>`, `</div>`
+              - `<div>`
+              - `</div>`
+              - `class=""` or `id=""`
+           </script>
+        </section>
+
+        <section>
+           <h3>CSS recap</h3>
+           <ul>
+            <li class="fragment">
+              What is CSS and how does it relate to HTML?
+            </li>
+            <li class="fragment">
+              How do I add CSS to a webpage?
+            </li>
+           </ul>
+           <img src="https://i.imgur.com/OnrNAEZ.png" class="fragment">
+        </section>
+
+        <section>
+          <p>Where does JavaScript fit in?</p>
+        </section>
+
+        <section>
+          <img src="https://melaloo.files.wordpress.com/2015/07/02fig01.jpg" height="70%" width="70%">
+        </section>
+
+        <section>
+          <ul>
+            <li>Google "Live results: Track the votes in Alaska, Hawaii and Washington"</li>
+            <li>Explore the page and describe what parts may be using JavaScript</li>
+          </ul>
+          <a href="http://www.theguardian.com/us-news/ng-interactive/2016/mar/26/live-results-alaska-hawaii-washington-caucuses" target="_blank">
+            <img src="https://i.imgur.com/aTgbO1Y.png">
+          </a>
+        </section>
+
+        <section>
+          <p>How does JavaScript make pages more interactive?</p>
+          <ul>
+            <li>Access content</li>
+            <li>Modify content</li>
+            <li>React to user events</li>
+            <li>Recipe-like programming rules</li>
+          </ul>
+        </section>
+
+        <section>
+          <p>Examples of accessing content using JS</p>
+          <ul>
+            <li class="fragment">Select the text inside of a &lt;h1&gt; element</li>
+            <li class="fragment">Select an element that has the class of "container"</li>
+            <li class="fragment">Find out the content of an input with the id of "email"</li>
+          </ul>
+        </section>
+
+        <section>
+          <p>Examples of modifying content using JS</p>
+          <ul>
+            <li class="fragment">Add a paragraph after the first h1 element</li>
+            <li class="fragment">Change the class of an element to make it display differently</li>
+            <li class="fragment">Change the content inside of a paragraph element</p>
+          </ul>
+        </section>
+
+        <section>
+          <p>Let's use our March 10 lab to see how we can access and modify content</p>
+          <a href="https://newschool-webfundamentals.github.io/lab-10/" target="_blank">
+            <img src="https://i.imgur.com/oeGWmLI.png" height="70%" width="70%">
+          </a>
+        </section>
+
+        <section>
+          <p>Examples of events we can listen to using JS</p>
+          <ul>
+            <li class="fragment">
+              When a user hovers over an image
+            </li>
+            <li class="fragment">
+              When a user clicks a button
+            </li>
+            <li class="fragment">
+              When an amount of time has passed
+            </li>
+          </ul>
+        </section>
+
+        <section>
+          <p>Recipes are how we bring accessing, modifying, and events together.</p>
+          <ul>
+            <li class="fragment">
+              When a user hovers over an image, add a paragraph elements with caption text
+            </li>
+            <li class="fragment">
+              When a user clicks on a submit button, display the result
+            </li>
+            <li class="fragment">
+              After every second, add 5 to the total amount and display the result
+            </li>
+          </ul>
+        </section>
+
+        <section>
+          <p>Let's see an example of listening to events and recipes</p>
+          <a href="http://www.theguardian.com/world/interactive/2013/nov/01/snowden-nsa-files-surveillance-revelations-decoded" target="_blank">
+            <img src="https://i.imgur.com/usMH6Zy.png" height="70%" width="70%">
+          </a>
+        </section>
+
+        <section>
+          <p>We have another word for these recipes. They're called scripts. A script is a series of instructions that a computer can follow to achieve a goal.</p>
+        </section>
+
+        <section>
+          <p>
+            Unlike people, computers need very specific instructions to follow these recipes.
+          </p>
+        </section>
+
+        <section>
+          <p>How do you tell a person to make a sandwich?</p>
+          <img src="http://i.ehow.com/images/a00/01/9b/make-peanut-butter-1.3-800x800.jpg">
+          </br>
+          <small class="fragment">Make me a pb&j please</small>
+        </section>
+
+        <section>
+          <p>How do you tell a computer to make a sandwich?</p>
+          <img src="http://a.files.bbci.co.uk/bam/live/content/zhwsr82/large">
         </section>
       </div>
       <!-- End Slides -->
@@ -125,11 +271,11 @@
         // Optional reveal.js plugins
         dependencies: [
           { src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
-          { src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
-          { src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
-          { src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
-          { src: 'plugin/zoom-js/zoom.js', async: true },
-          { src: 'plugin/notes/notes.js', async: true }
+          { src: '../plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+          { src: '../plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+          { src: '../plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+          { src: '../plugin/zoom-js/zoom.js', async: true },
+          { src: '../plugin/notes/notes.js', async: true }
         ]
       });
 
