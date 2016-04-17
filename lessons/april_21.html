@@ -51,7 +51,7 @@
           <h3>Agenda</h3>
           <ul>
             <li>
-              Warm up with functions
+              Group warm up with functions and conditionals
             </li>
             <li>
               Introduction to jQuery & the DOM
@@ -209,7 +209,85 @@
 
         <section>
           <p>Parents, children, siblings...</p>
-          <img src="http://images.slideplayer.com/28/9376424/slides/slide_5.jpg" height="70%" width="70%">
+          <img src="https://i.imgur.com/ewuiHBx.png">
+        </section>
+
+        <section>
+          <p>Once we understand how HTML is structured on the page (DOM), then we can search through the HTML to access elements</p>
+        </section>
+
+        <section>
+          <p>Before writing any code, we need to make sure the DOM is loaded on our page. If it isn't, jQuery won't be able to access the objects on the page</p>
+          <img src="https://i.imgur.com/gHyvBMr.png">
+        </section>
+
+        <section>
+          <p>Use the jQuery function to get an element by a selector.</p>
+          <img src="https://i.imgur.com/Oo528DW.png">
+        </section>
+
+        <section>
+          <p>Once we have the element selected, you can call other functions like "text" to get the element's text</p>
+          <img src="https://i.imgur.com/o4u4j1c.png">
+        </section>
+
+        <section>
+          <p>To modify the text, you pass a string argument to the text function</p>
+          <img src="https://i.imgur.com/ESxBj5m.png">
+          <small>Functions with no arguments are usually "getters" in jQuery, ones with arguments are "setters"</small>
+        </section>
+
+        <section>
+          <p>You can also use CSS selectors to get an element on the page. Sometimes you may not want all the "h1" elements on a page, but a specific one.</p>
+          <img src="https://i.imgur.com/EM8FjZQ.png">
+        </section>
+
+        <section>
+          <p>That's not what we want...</p>
+          <img src="https://i.imgur.com/nMYFDdF.png">
+        </section>
+
+        <section>
+          <p>Use class to select an element</p>
+          <img src="https://i.imgur.com/0VvsR56.png">
+        </section>
+
+        <section>
+          <p>We can also use ID as a selector</p>
+          <img src="https://i.imgur.com/EWU1btC.png">
+        </section>
+
+        <section>
+          <p>You can also find elements by traversing the DOM</p>
+          <p><code>$("#destinations").find("li")</code></p>
+          <img src="https://i.imgur.com/e1nEkFq.png" height="70%" width="70%">
+        </section>
+
+        <section>
+          <p><code>$("#destinations").find("li").first()</code></p>
+          <p><code>$("#destinations").find("li").last()</code></p>
+          <img src="https://i.imgur.com/e1nEkFq.png" height="70%" width="70%">
+        </section>
+
+        <section>
+          <p>Remember how the DOM is like a family tree?</p>
+          <img src="https://i.imgur.com/2X5NgLJ.png">
+          <small>Access direct children of an element</small>
+        </section>
+
+        <section>
+          <p>Or access the parent element</p>
+          <img src="https://i.imgur.com/uHRp7qz.png">
+        </section>
+
+        <section>
+          <p>Now that we know how to access elements and modify them using getters and setters, let's talk about events.</p>
+          <pre>
+            <code class="hljs">
+              $("li").first().text();
+              $("li").first().text("New text!");
+            </code>
+          </pre>
         </section>
 
       </div>
