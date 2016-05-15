@@ -1,0 +1,351 @@
+@font-face {
+  font-family: 'comic';
+  src: url('animeace2_reg.ttf');
+}
+
+body {
+     background: black; 
+   background-image: url(trees.jpg);
+   background-size: 100%;
+
+}
+h1 {
+  text-align: center;
+}
+div.title {
+  margin-top: 60px;
+  text-align: center;
+  width: 100%;
+  height: 200px;
+}
+img.title {
+  width: 830px;
+  border: none;
+  color: white;
+
+}
+div.body {
+  width: 830px;
+  height: 9700px;
+  border: none;
+  color: white;
+  margin-right: auto;
+  margin-left: auto;
+}
+div.mask {
+  margin-top: 40px;
+  width: 99%;
+  height: 300px;
+  border: none;
+  color: white;
+}
+img.mask {
+  height: 87%;
+}
+div.image1 {
+
+  clear: right;
+  float: left;
+  margin-top: 20px;
+  text-align: left;
+  height: 300px;
+  width: 300px;
+  border: solid;
+  color: white;
+  overflow: hidden;
+}
+img.image1 {
+  opacity: .5;
+  width: 100%;
+}
+img.image1:hover {
+  opacity: 1;
+}
+div.ttext1 {
+  color: black;
+  font-family: 'comic', sans-serif;
+  line-height: 25px;
+  font-size: 13px;
+  padding: 0px 20px;
+}
+
+div.text1 {
+  background-color: white;
+  float: right;
+  height: 300px;
+  width: 500px;
+  margin-top: 20px;
+  border: solid;
+  color: white;
+}
+div.text2 {
+   background-color: white; 
+  width: 99%;
+  height: 350px;
+  border: solid;
+  color: white;
+  margin-top: 345px;
+}
+div.ttext2 {
+  color: black;
+  font-family: 'comic', sans-serif;
+  line-height: 25px;
+  font-size: 13px;
+  padding: 0px 20px;
+}
+div.text3 {
+	background-color: white; 
+	float: left;
+	clear: right;
+  width: 60%;
+  height: 420px;
+  border: solid;
+  color: white;
+  margin-top: 20px;
+}
+div.ttext3 {
+	color: black;
+  font-family: 'comic', sans-serif;
+  line-height: 25px;
+  font-size: 13px;
+  padding: 0px 20px;
+}
+div.video {
+	width: 36%;
+	float: right;
+	height: 420px;
+	margin-top: 20px;
+	background-color: white;
+	border: solid;
+	color: white;
+}
+div.text4 {
+	background-color: white; 
+  width: 99%;
+  height: 730px;
+  border: solid;
+  color: white;
+  margin-top: 465px;
+}
+div.ttext4 {
+	color: black;
+  font-family: 'comic', sans-serif;
+  line-height: 25px;
+  font-size: 13px;
+  padding: 0px 20px;
+}
+div.gif {
+	text-align: center;
+	background-color: black; 
+  width: 99%;
+  height: 230px;
+  border: solid;
+  color: white;
+  margin-top: 20px;
+  overflow: hidden;
+}
+img.gif {
+	opacity: .5;
+	margin-top: -100px;
+	width: 100%;
+}
+img.gif:hover {
+	opacity: 1;
+}
+iframe {
+	height: 100%;
+}
+div.text5 {
+	background-color: white; 
+  width: 99%;
+  height: 7010px;
+  border: solid;
+  color: white;
+  margin-top: 20px;
+}
+div.ttext5 {
+	color: black;
+  font-family: 'comic', sans-serif;
+  line-height: 25px;
+  font-size: 13px;
+  padding: 0px 20px;
+}
+div.end {
+	background-image: url(masked.jpg);
+	background-size: 100%;
+	 width: 99%;
+  height: 230px;
+  border: solid;
+  color: white;
+  margin-top: 20px;
+  overflow: hidden;
+}
+div.end:hover {
+	background-image: url(unmasked.jpg);
+}
+@media screen and (max-width: 638px) {
+ 
+div.body {
+	width: 90%;
+}
+div.title {
+  margin-top: 60px;
+  text-align: center;
+  width: 100%;
+  height: 100px;
+}
+img.title {
+  width: 90%;
+  border: none;
+  color: white;
+
+}
+div.mask {
+  margin-top: 5px;
+  width: 99%;
+  height: 100px;
+  border: none;
+  color: white;
+}
+img.mask {
+  height: 105%;
+}
+div.image1 {
+
+  margin-top: 40px;
+  float: none;
+  height: 250px;
+  width: 100%;
+  border: solid;
+  color: white;
+  overflow: hidden;
+}
+img.image1 {
+  opacity: .5;
+  width: 100%;
+}
+img.image1:hover {
+  opacity: 1;
+}
+div.ttext1 {
+  color: black;
+  font-family: 'comic', sans-serif;
+  line-height: 25px;
+  font-size: 13px;
+  padding: 0px 20px;
+}
+
+div.text1 {
+	float: none;
+  background-color: white;
+  height: 450px;
+  width: 100%;
+  margin-top: 20px;
+  border: solid;
+  color: white;
+}
+div.text2 {float: none;
+   background-color: white; 
+  width: 99%;
+  height: 900px;
+  border: solid;
+  color: white;
+  margin-top: 20px;
+}
+div.ttext2 {float: none;
+  color: black;
+  font-family: 'comic', sans-serif;
+  line-height: 25px;
+  font-size: 13px;
+  padding: 0px 20px;
+}
+div.text3 {float: none;
+	background-color: white; 
+  width: 100%;
+  height: 620px;
+  border: solid;
+  color: white;
+  margin-top: 20px;
+}
+div.ttext3 {
+	color: black;
+  font-family: 'comic', sans-serif;
+  line-height: 25px;
+  font-size: 13px;
+  padding: 0px 20px;
+}
+div.video {float: none;
+	width: 100%;
+	text-align: center;
+	height: 220px;
+	margin-top: 20px;
+	background-color: white;
+	border: solid;
+	color: white;
+}
+div.text4 {float: none;
+	background-color: white; 
+  width: 100%;
+  height: 1730px;
+  border: solid;
+  color: white;
+  margin-top: 20px;
+}
+div.ttext4 {float: none;
+	color: black;
+  font-family: 'comic', sans-serif;
+  line-height: 25px;
+  font-size: 13px;
+  padding: 0px 20px;
+}
+div.gif {float: none;
+	text-align: center;
+	background-color: black; 
+  width: 100%;
+  height: 130px;
+  border: solid;
+  color: white;
+  margin-top: 20px;
+  overflow: hidden;
+}
+img.gif {float: none;
+	opacity: .5;
+	margin-top: -70px;
+	width: 100%;
+}
+img.gif:hover {
+	opacity: 1;
+}
+iframe {
+	height: 100%;
+}
+div.text5 {
+	background-color: white; 
+  width: 100%;
+  height: 16750px;
+  border: solid;
+  color: white;
+  margin-top: 20px;
+}
+div.ttext5 {
+	color: black;
+  font-family: 'comic', sans-serif;
+  line-height: 25px;
+  font-size: 13px;
+  padding: 0px 20px;
+}
+div.end {
+	background-image: url(masked.jpg);
+	background-size: 100%;
+	 width: 99%;
+  height: 130px;
+  border: solid;
+  color: white;
+  margin-top: 20px;
+  overflow: hidden;
+}
+div.end:hover {
+	background-image: url(unmasked.jpg);
+}
+
+}

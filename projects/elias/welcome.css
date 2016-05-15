@@ -1,0 +1,94 @@
+body {
+     background: url("doom.gif") no-repeat center center fixed; 
+  -webkit-background-size: 50%;
+  -moz-background-size: 50%;
+  -o-background-size: 50%;
+  background-size: 50%;
+  background-color: white;
+}
+body {
+
+width: 100%; /* you have to have a size or this method doesn't work */
+     /* think about making these max-width instead - might give you some more responsiveness */
+height: 100%;
+    position: absolute; /* positions out of the flow, but according to the nearest parent */
+    top: 0; right: 0; /* confuse it i guess */
+    bottom: 0; left: 0;
+    margin: auto; /* make em equal */
+      -webkit-animation: fadein 10s; /* Safari, Chrome and Opera > 12.1 */
+       -moz-animation: fadein 10s; /* Firefox < 16 */
+        -ms-animation: fadein 10s; /* Internet Explorer */
+         -o-animation: fadein 10s; /* Opera < 12.1 */
+            animation: fadein 10s;
+    }
+    @keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Firefox < 16 */
+@-moz-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Internet Explorer */
+@-ms-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Opera < 12.1 */
+@-o-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+img {
+
+    width: 50%;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+  /* bring your own prefixes */
+  transform: translate(-50%, -50%);
+}
+a:hover {
+     width: 102%;
+   position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+@media screen and (max-width: 638px) {
+  body {
+     background: url("doom.gif") no-repeat center center fixed; 
+  -webkit-background-size: 90%;
+  -moz-background-size: 90%;
+  -o-background-size: 90%;
+  background-size: 125%;
+  background-color: white;
+}
+img {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+  /* bring your own prefixes */
+  transform: translate(-50%, -50%);
+}
+  img {
+    width: 90%
+  }
+  a:hover {
+     width: 102%;
+   position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+}

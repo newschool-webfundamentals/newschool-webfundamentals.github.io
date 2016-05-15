@@ -1,0 +1,66 @@
+
+h1{
+  font-size: 30px;
+  color: black ;
+}
+
+.image {
+   position: relative;
+   width: 100%;
+   }
+
+h2 {
+   position: absolute;
+   top: 200px;
+   left: 0;
+   width: 100%;
+}
+
+
+
+img.{
+   align-content: center;
+}
+
+#bigpic{display: none;}
+
+
+.darken {
+  opacity: 0.5;
+}
+
+.video-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    padding-top: 35px;
+    height: 0;
+    overflow: hidden;
+}
+
+.video-container iframe {
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+
+@media screen and (max-width: 400px){
+   .container-fluid{
+   padding-top: 3px;
+   padding-bottom: 3px;
+  width: 95%;
+  margin: 0 auto;
+   };
+
+   h1{
+    width: 100%;
+    padding: 0px;
+  };s
+}
+
+
+
+
+Status API Training Shop Blog About
