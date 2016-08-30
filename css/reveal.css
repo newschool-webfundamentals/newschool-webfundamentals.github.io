@@ -1336,3 +1336,13 @@ html:-moz-full-screen-ancestor {
 
 .zoomed .reveal .roll span:after {
   visibility: hidden; }
+
+.half {
+  height: 50%;
+  width: 50%;
+}
+
+.seventy {
+  height: 70%;
+  width: 70%;
+}
