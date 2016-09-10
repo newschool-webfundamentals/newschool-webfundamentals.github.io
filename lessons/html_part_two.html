@@ -38,7 +38,7 @@
               Taught by
               <a href="http://www.aaackerman.nyc">Alexandra Ackerman</a>
               <br>
-              Code and assignments available at
+              Code available at
               <a href="https://github.com/newschool-webfundamentals">https://github.com/newschool-webfundamentals</a>
               <br>
               Presentations available at
@@ -52,7 +52,7 @@
               Warm up
             </li>
             <li>
-              Introduction to HTML
+              HTML in-depth
             </li>
             <li>
               Build a webpage together
@@ -64,29 +64,15 @@
         </section>
 
         <section>
-          <p>Next class we'll have our first retrospective to see what's working and what's not working with the class so that I can do my best to help you.</p>
-          <p>Added a bit more time for lab today to so that everyone can have questions answered and a webpage live by the end of today.</p>
-        </section>
-
-        <section>
           <h3>Warm up</h3>
           <ol>
-            <li>
-              Why would a developer prefer the command line over the GUI? Name commands for listing directory contents, creating directories, and creating files.
-            </li>
-            <li>
-              What is git, and why do we use it? What's the difference between Git and GitHub?
-            </li>
-            <li>
-              Explain a typical git and GitHub workflow to me. What should I do after I create a bunch of new files that I want to save onto GitHub?
-            </li>
           </ol>
         </section>
 
         <section>
-          <p>We've discussed how the web works – servers, requests, HTTP, and beyond.</p>
-          <p class="fragment">We've also covered how to make and track files and folders on a computer.</p>
-          <p class="fragment">Now we need to figure out what to put in our files to make webpages.</p>
+          <p>We've discussed how the web works: servers, requests, HTTP and beyond.</p>
+          <p class="fragment">We've also covered how to make files and folders on a computer to upload to GitHub.</p>
+          <p class="fragment">Now we need to figure out how to structure the content in our files to make webpages.</p>
         </section>
 
         <section>
@@ -98,16 +84,16 @@
           <h3>Learning objectives</h3>
           <ul>
             <li class="fragment">
-              Know how to symantically structure a document using HTML
+              Label components of an HTML element
             </li>
             <li class="fragment">
-              Label components of an HTML element
+              Know how to symantically structure a document using HTML
             </li>
             <li class="fragment">
               Be able to link to other webpages using absolute and relative paths
             </li>
             <li class="fragment">
-              Identify the different roles that HTML, CSS and JavaScript have on a webpage
+              Go over basic usability principles
             </li>
           </ul>
         </section>
@@ -118,12 +104,7 @@
         </section>
 
         <section>
-          <img src="https://i.imgur.com/ulvEE7k.png" height="40%" width="40%">
-          <img src="https://i.imgur.com/00l2Bs5.png" height="40%" width="40%">
-        </section>
-
-        <section>
-          <p>Documents all have a structure. Think about a newspaper–how is it structured?</p>
+          <p>Documents all have a structure. How is a newspaper structured?</p>
           <ul>
             <li class="fragment">
               Headline
@@ -152,24 +133,12 @@
         </section>
 
         <section>
-          <img src="https://i.imgur.com/YFwxAp7.png">
-        </section>
-
-        <section>
-          <img src="https://i.imgur.com/bbmkXFX.png">
-        </section>
-
-        <section>
-          <img src="https://i.imgur.com/SODXIJI.png">
-        </section>
-
-        <section>
-          <p>The content that lives on a webpage sits between angled brackets, we call these <b><i>elements</i></b>. They display different elements of a webpage.</p>
+          <p>What's this called?</p>
           <img src="https://i.imgur.com/K3VU6Fx.png">
         </section>
 
         <section>
-          <p>These elements are made up of tags. Most elements have an opening tag and a closing tag.</p>
+          <p>These elements are made up of what?</p>
           <img src="https://i.imgur.com/9y9Da95.png">
         </section>
 
@@ -181,10 +150,6 @@
         <section>
           <h3>Head & Body</h3>
           <p>A webpage is made up of a head and a body. A head element contains information about the page, such as a title. A body element displays its contents to the browser.</p>
-        </section>
-
-        <section>
-          <img src="https://i.imgur.com/82zAnH5.png" height="100%" width="100%">
         </section>
 
         <section>
@@ -204,7 +169,7 @@
         </section>
 
         <section>
-          <h3>Structural versus Semantic markup</h3>
+          <h3>Structural & Semantic markup</h3>
           <p>Let's go over some of the typical tags you migth use when building a web page.</p>
         </section>
 
@@ -229,7 +194,7 @@
         <section>
           <h3>Lists</h3>
           <p>Unordered and ordered</p>
-          <img src="https://i.imgur.com/wWxuVEx.png">
+          <img src="https://i.imgur.com/wWxuVEx.png" class="seventy">
         </section>
 
         <section>
@@ -238,41 +203,100 @@
         </section>
 
         <section>
-          <h3>Images</h3>
-          <p>Takes a "src" (source) attribute, to designate image location.</p>
-          <img src="https://i.imgur.com/STZh2Km.png">
-        </section>
-
-        <section>
-          <p>Tags are also able to have attributes, which give extra info on the element.</p>
-          <img src="https://i.imgur.com/nSNDoXi.png">
-          <small>This image is displayed at 50% height and width, and it has a url source.</small>
-        </section>
-
-        <section>
+          <p>Some elements have <em>"attributes"</em></p>
           <p>Attributes have a name and are followed by an equals sign with a value in quotation marks.</p>
           <img src="https://i.imgur.com/gyU6BJe.png">
           <small>They give more context about what the element is.</small>
         </section>
 
         <section>
-          <h3>Links</h3>
+          <h3>Images</h3>
+          <p>Have a "src" (source) attribute, to designate image location.</p>
+          <img src="https://i.imgur.com/STZh2Km.png">
+        </section>
+
+        <section>
+          <p>Tags can have other attributes, which give extra info on the element.</p>
+          <img src="https://i.imgur.com/nSNDoXi.png">
+          <small>This image is displayed at 50% height and width, and it has a url source.</small>
+        </section>
+
+        <section>
+          <h3>Links or "anchor" tags</h3>
           <small>Should have a "href" (hyperlink reference) attribute</small>
           <img src="https://i.imgur.com/iokpsF4.png">
           <img src="https://i.imgur.com/TdhJyv4.png">
         </section>
 
         <section>
-          <p>There are also elements that give extra information about the meaning of the text they surround, which are called "semantic" markup. Emphasis, and blockquotes are an example of this. We'll go over them next class!</p>
+          <h3>Divs</h3>
+          <p>Divs are tags that create "divisions" between other elements. You group them together, most often for styling purposes.</p>
+        </section>
+
+        <section>
+          <img src="https://i.imgur.com/gS6DUyt.png" class="half">
+          <img src="https://i.imgur.com/BYSjDoS.png" class="half">
+        </section>
+
+        <section>
+          <p>These elements define the structure of your webpage.</p>
+        </section>
+
+        <section>
+          <p>There are also elements that give extra information about the <em>meaning</em> of the text they surround. This is called "semantic" markup.</p>
+        </section>
+
+        <section>
+          <h3>Emphasis and italics</h3>
+          <p>One is structural, one is semantic. What do you think?</p>
+        </section>
+
+        <section>
+          <img src="https://i.imgur.com/XnJJTjU.png" class="half">
+          <img src="https://i.imgur.com/SjOpvNf.png">
+        </section>
+
+        <section>
+          <p>Italics are structural, they define how the word looks.</p>
+          <p>Emphasis is semantic, they describe how the words feel.</p>
+        </section>
+
+        <section>
+          <p>Same with strong and bold tags.</p>
+          <img src="https://i.imgur.com/GbHpBIO.png">
+          <img src="https://i.imgur.com/4OghFzK.png">
+        </section>
+
+        <section>
+          <h3>Blockquotes</h3>
+          <img src="https://i.imgur.com/N7QRHHU.png">
+          <img src="https://i.imgur.com/3JC0ENA.png">
+        </section>
+
+        <section>
+          <p>Before we continue to my demo and lab, let's talk about usability</p>
+          <p><small>Most rules are common sense, you just need to be aware of them.</small></p>
+          <img src="http://testingtweaks.com/wp-content/uploads/2014/08/DevWatchingUsabilityTest.jpg">
+        </section>
+
+        <section>
+          <p>People don't read websites (unless they're reading an article)</p>
+          <p>We <em>scan</em> them.</p>
+          <img src="http://media.gettyimages.com/videos/motorcyclists-ride-past-a-vodafone-india-ltd-store-in-mumbai-india-on-video-id496863508?s=640x640">
+        </section>
+
+        <section>
+          <img src="https://i.imgur.com/7jpBqmD.png">
+          <p class="fragment">Important things should be important.</p>
+          <p class="fragment">Things that are similar, should be shown similarly</p>
+        </section>
+
+        <section>
+          <h3>Let's look at the <a href="http://www.nytimes.com/" target="_blank">NYTimes</a> as an example</h3>
         </section>
 
         <section>
           <p>Let's try to recreate the structure of a <a href="http://cooking.nytimes.com/recipes/1015722-turkey-cutlets-marsala" target="_blank">webpage</a> together.</p>
-        </section>
-
-        <section>
-          <p>Before we continue to lab, let's talk about where CSS and JavaScript fit in.</p>
-          <img src="https://i.imgur.com/OLgbpW6.png" width="80%" height="50%">
         </section>
 
         <section>
@@ -288,11 +312,7 @@
             <li>Headers and paragraph text</li>
             <li>Links to other pages</li>
           </ul>
-        </section>
-
-        <section>
-          <p>Create a repo with your username and "git push" code by the end of class.</p>
-          <img src="https://i.imgur.com/kDCc5PJ.png">
+          <p><small>Add it to your web-fundamentals GitHub repository by the end of class.</small></p>
         </section>
 			</div>
 		</div>
