@@ -5,10 +5,8 @@ header {
   color: white;
 }
 
-section {
-  background-size: cover;
-  background: url("http://www.myfreetextures.com/wp-content/uploads/2015/01/lots-of-grass-background.jpg");
-  height: 700px;
+h1, h2 {
+  font-family: 'Montserrat', sans-serif;
 }
 
 ul {
@@ -29,9 +27,6 @@ li > a {
   text-transform: uppercase;
 }
 
-h1, h2 {
-  font-family: 'Montserrat', sans-serif;
-}
 
 h1 {
   font-size: 70px;
@@ -74,4 +69,10 @@ a:visited {
 
 .kitten {
   float: right;
+}
+
+section {
+  background-size: cover;
+  background: url("http://www.myfreetextures.com/wp-content/uploads/2015/01/lots-of-grass-background.jpg");
+  height: 700px;
 }
