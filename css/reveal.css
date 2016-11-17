@@ -1346,3 +1346,7 @@ html:-moz-full-screen-ancestor {
   height: 70%;
   width: 70%;
 }
+
+.toc li {
+  font-size: 30px;
+}
