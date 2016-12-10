@@ -1,0 +1,39 @@
+nav {
+	background-color: white;
+	padding-right: 10px;
+	padding-left: 10px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+h1, h2, h3, h4, h5, h6, p, body {
+	font-family: "Avenir";
+}
+h1 {
+	font-size: 45px;
+}
+p{
+	font-size: 18px;
+}
+blockquote {
+	font-size: 18px;
+	color: grey;
+	border-left-color: #cddef2;
+}
+subtitle {
+	font-size: 20px;
+	color: grey;
+}
+h4 {
+	text-align: center;
+}
+.img-padding {
+	padding-top: 20px;
+	height: 385px;
+}
+.img-subtext {
+	font-size: 14px;
+	color: grey;
+}
+.sidebar-padding {
+	padding-top: 50px;
+}

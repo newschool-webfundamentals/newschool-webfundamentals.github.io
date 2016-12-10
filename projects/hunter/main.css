@@ -1,0 +1,51 @@
+nav {
+  color: #fff;
+  background-color: black;
+}
+
+footer.page-footer {
+  margin-top: 20px;
+  padding-top: 20px;
+  background-color: #DEB7C2 ;
+}
+body {
+  font-family: "Open Sans", sans-serif;
+}
+
+p {
+  line-height: 1.6;
+  font-size: 20px;
+  font-family: serif;
+}
+
+.row {
+  margin-bottom: 100px;
+}
+
+@media screen and (max-width: 600px) {
+  header {
+    height: 250px;
+  }
+}
+
+.firstword {
+  font-size: 30pt;
+}
+
+h1 {
+  font-family: 'Righteous', cursive;
+}
+
+h5 {
+  font-family: 'Droid Serif', serif;
+}
+
+blockquote {
+  font-family: 'Changa One', cursive;
+  font-size: 15pt;
+}
+
+.video-container {
+  max-height:inherit;
+  max-width: inherit;
+}
