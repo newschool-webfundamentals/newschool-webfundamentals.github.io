@@ -1,0 +1,168 @@
+html{
+		font-family: 'Montserrat Black', sans-serif;
+}
+
+/* NavBar Styles */
+
+.brand-logo{
+	margin-left: 30px;
+}
+
+#fbicon, #twicon, #emicon{
+	margin-right: 5px;
+}
+
+/* Header Styles */
+
+h1 {
+	font-family: 'Montserrat ExtraBold', sans-serif;
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+	background-color: black;
+	box-shadow: black;
+	color: white;
+}
+
+.By {
+	font-family: 'Montserrat Light', sans-serif;
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+	color: grey;
+	font-size: 20px;
+}
+
+.authorname {
+	font-family: 'Montserrat Bold', sans-serif;
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+	color:white;
+	font-size: 20px;
+}
+
+.parallax-container {
+    background-size: 100%;
+      height: 400px;
+}
+
+
+/* Body Styles */
+
+p {
+	font-family: 'Montserrat', sans-serif;
+	font-size: 16px;
+	margin-top: 30px;
+	line-height: 25px;
+}
+
+blockquote {
+   font-size: 19px;
+   font-family: 'Monserrat', sans-serif;
+   font-style: italic;
+   font-weight: 550;
+   text-align: center;
+   border-left: none;
+   margin-top: 60px;
+   margin-bottom: 30px;
+   padding: 30px;
+   border-top: 1px solid;
+   border-bottom: 1px solid;
+ }
+
+.subhed{
+	font-family: 'Montserrat ExtraBold', sans-serif;
+	font-size: 40px;
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+	line-height: 50px;
+}
+
+h3, h5 {
+	font-family: 'Montserrat Light', sans-serif;
+}
+
+.slider{
+	margin-top: 30px;
+	margin-bottom: 30px;
+}
+
+.publishdate{
+	font-family: 'Montserrat Light', sans-serif;
+	color: grey;
+	padding-top:30px;
+
+}
+
+.author-card__image{
+	border: 1px solid #e5e5e5;
+	border-radius: 50%;
+	height: 5rem;
+	margin-right: 1rem;
+	margin-left: 320px;
+	width: 5rem;
+	float: left;
+}
+
+.author-card__headline{
+	margin-left: 420px;
+}
+.author-card__twitter{
+	margin-left: 40px;
+}
+/* Mobile Styles */
+
+@media (max-width: 768px) {
+
+
+.brand-logo{
+	margin-left: 0px;
+}	
+ p {
+   width: 100%;
+   margin-left: auto;
+   margin-right: auto;
+   padding-right: 20px;
+   padding-left: 20px;
+   font-size: 18px;
+ }
+
+ h1 {
+   width: 100%
+ }
+ .set-width-20, .set-width-40, .set-width-60 {
+   width: 100%;
+ }
+
+ .embed__image {
+
+ 	margin-right: auto;
+ 	margin-left: auto;
+ 	float: center;
+ 	width: 100%;
+ }
+
+ #gif1 {
+ 	width: 121%;
+ }
+
+ .pull-quote {
+   float: none;
+   width: 100%;
+ }
+
+.author-card__image{
+	border: 1px solid #e5e5e5;
+	border-radius: 50%;
+	height: 5rem;
+	margin-right: 1rem;
+	margin-left: 20px;
+	width: 5rem;
+}
+
+.author-card__headline{
+	margin-left: 100px;
+}
+
