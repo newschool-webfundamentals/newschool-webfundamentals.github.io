@@ -171,6 +171,7 @@ html:-moz-full-screen-ancestor {
 /*********************************************
  * CONTROLS
  *********************************************/
+
 .reveal .controls {
   display: none;
   position: fixed;
