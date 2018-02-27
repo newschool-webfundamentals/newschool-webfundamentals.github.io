@@ -1,0 +1,193 @@
+/* unvisited link */
+a:link {
+    color: white;
+
+}
+
+/* visited link */
+a:visited {
+    color: white;
+}
+
+/* mouse over link */
+a:hover {
+    color: #6599cd;
+}
+
+/* selected link */
+a:active {
+    color: #6599cd;
+}
+
+
+body {
+        text-align: left;
+        background-color: #19334d;
+        overflow-x: hidden;
+        font-family: 'Frank Ruhl Libre', serif;
+
+
+}
+
+header {
+        background-color: #19334d; 
+        padding-top: 30px;
+        padding-bottom: 10px;
+        color: white;
+        text-align: center;
+        
+}
+
+header h1 {
+        font-size: 65px;
+        /*text-align: left;*/
+        text-transform: uppercase;
+        text-shadow: 10%;
+        /*margin-left: 15px;*/
+        font-weight: bold;
+        letter-spacing: 2px;
+
+}
+
+.nav li {
+        margin: 30px;
+        display: inline-block;
+        padding-right: 20px;
+        font-size: 20px;
+        
+}
+
+.nav li:hover { 
+        color: #6599cd;
+        transition: all .2s;
+ }
+.nav a { 
+        text-decoration: none;
+ }
+
+
+.nav {
+        width: 100%;
+        padding-top: 5px; 
+        
+}
+.stories {
+    width: 95%;
+    margin: auto;
+    background-color: #19334d;
+    padding-bottom: 50px;
+}
+.stories h2 {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    font-size: 36px;
+}
+.stories h2:hover {
+        color: #6599cd;
+        transition: all .2s;
+}
+.fashion { 
+        /*border: 10px solid #19334d;*/
+       /* padding-left: 20px;
+        padding-right: 20px;*/
+        /*float: left;*/
+        display: block;
+        text-align: center;
+        font-size: 25px;
+        /*width: 95%;*/
+        margin-bottom: 25px;
+        background-color: white;
+        border-radius: 8px;
+}
+
+.fashion img {
+        float: center;
+        transition: all .5s;
+        width: 25%;
+        display: block;
+        
+}
+
+.fashion img:hover { 
+        filter: brightness(60%);
+        transition: all .5s;
+
+}
+
+.diner {
+        /*border: 10px solid #19334d;*/
+       /* padding-right: 2%;
+        padding-left: 2%;*/
+        float: left;
+        display: block;
+        text-align: center;
+        font-size: 30px;
+        width: 49%;
+        background-color: white;
+        margin-right: 2%;
+        border-radius: 8px;
+        height: 320px;
+
+}
+
+.diner a {
+        color: black;
+        text-decoration: none;
+}
+
+.diner a:hover { 
+        color: #6599cd;
+        transition: all .2s;
+ }
+
+.hug { 
+        /*border: 10px solid #19334d;*/
+        width: 49%;
+       /* padding-right: 2%;
+        padding-left: 2%;*/
+        float: left;
+        display: block;
+        text-align: center;
+        font-size: 25px;
+        background-color: white;
+        border-radius: 8px;
+        height: 320px;
+
+ }
+
+ .fashion-image {
+    background-image: url("../img/fashion.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 400px;
+    width: 100%;
+    transition: .3s;
+ }
+.diner-image {
+    background-image: url('http://images.nymag.com/listings/restaurant/1diner.jpg');
+    background-position: center;   
+    background-size: cover;
+    height: 200px;
+    width: 100%;
+    transition: .3s;
+ }
+.hug-image {
+    background-image: url('http://varenkaruiz.com/wp-content/uploads/2016/07/19-Berry-N13-SM-640x360.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 200px;
+    width: 100%;
+    transition: .3s;
+ }
+ .fashion-image:hover, .diner-image:hover, .hug-image:hover {
+    filter: brightness(70%);
+    transition: .3s;
+ }
+ .row-2 {
+    overflow: auto;
+    width: 100%;
+ }
+
+

@@ -1,0 +1,15 @@
+h1 {
+	font-size: 40px;
+	margin: 15px 15px 15px 80px;
+
+}
+
+li {
+	display: inline;
+	font-size: 15px;
+	margin: 30px;
+}
+
+a {
+	text-decoration: none;
+}

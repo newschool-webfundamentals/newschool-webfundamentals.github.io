@@ -1,0 +1,518 @@
+
+.freepress h1{
+  font-family: Asar;
+  font-size: 60px;
+  text-align: center;
+  padding-top: 70px;
+
+}
+
+.freepress h2{
+  font-family: Asar;
+  font-size: 15px;
+  text-align: center;
+  padding-top: 15px;
+
+}
+
+.social li{
+  display: inline;
+  margin-left: 50px;
+}
+
+.social img{
+  width: 2%;
+
+}
+
+hr{
+  border: 3px solid darkred;
+}
+
+.navbar ul{
+  font-family: Asar;
+  text-align: center;
+  margin-top: 40px;
+  border: 2px solid darkred;
+  background: solid darkred;
+  padding-top: 10px;
+  padding-bottom: 10px;
+
+}
+
+.navbar li{
+  display: inline;
+  margin: 40px;
+  font-size: 20px;
+
+
+}
+
+.featured{
+  font-family: Asar;
+  font-size: 30px;
+  color: darkred;
+  padding-top: 50px;
+  padding-left: 100px;
+}
+
+.alfonsohome img{
+  height: 10%;
+  width: 100%;
+  padding-top: 30px;
+  position: relative;
+}
+
+.alfonsohome h2{
+   position: absolute;
+   top: 800px;
+   left: 0;
+   width: 100%;
+
+}
+
+h2 span {
+   color: white;
+   font-family: Asar;
+   font-size: 100px;
+   letter-spacing: -1px;
+   background: rgb(0, 0, 0); /* fallback color */
+   background: rgba(0, 0, 0, 0.7);
+   padding: 10px;
+   padding-top: 10px;
+}
+h2 span.spacer {
+   padding:0 5px;
+}
+
+$(function() {
+
+    $("h2")
+        .wrapInner("<span>")
+
+    $("h2 br")
+        .before("<span class='spacer'>")
+        .after("<span class='spacer'>");
+
+});
+
+
+
+.articledivide{
+  border: 0.1px solid darkred;
+}
+
+.newsdivide{
+  border: 0.1px solid darkred;
+  margin-top: 50px;
+
+}
+
+.news{
+  font-family: Asar;
+  font-size: 30px;
+  color: darkred;
+  padding-top: 50px;
+  padding-left: 100px;
+
+}
+
+a{
+    color: black;
+    text-decoration: none;
+}
+
+a:hover{
+     color: darkred;
+     text-decoration:none;
+     cursor:pointer;
+     transition-duration: 0.5s;
+}
+
+.firstnews img{
+  width: 40%;
+  height: 20%;
+  padding-left: 100px;
+  padding-top: 40px;
+}
+
+.head1 {
+  font-family: Asar;
+  font-size: 40px;
+  padding-left: 650px;
+  margin-top: -300px;
+  margin-right: 20px;
+
+}
+
+.news1{
+  font-family: Asar;
+  padding-left: 650px;
+  padding-top: 40px;
+  font-size: 20px;
+  margin-right: 20px;
+}
+
+.byline1{
+  font-family: Asar;
+  padding-left: 650px;
+  padding-top: 40px;
+  font-size: 15px;
+  margin-right: 20px;
+}
+
+.secondnews img{
+  width: 40%;
+  height: 20%;
+  padding-left: 100px;
+  padding-top: 150px;
+}
+
+.head2{
+  font-family: Asar;
+  font-size: 40px;
+  padding-left: 650px;
+  margin-top: -250px;
+}
+
+.news2{
+  font-family: Asar;
+  padding-left: 650px;
+  padding-top: 40px;
+  font-size: 20px;
+  margin-right: 20px;
+}
+
+.byline2{
+  font-family: Asar;
+  padding-left: 650px;
+  padding-top: 40px;
+  font-size: 15px;
+  margin-right: 20px;
+}
+
+.featuresdivide{
+  border: 0.1px solid darkred;
+  margin-top: 80px;
+}
+
+.features{
+  font-family: Asar;
+  font-size: 30px;
+  color: darkred;
+  padding-top: 50px;
+  padding-left: 100px;
+
+}
+
+.features img{
+  width: 42%;
+  height: 20%;
+  padding-left: 10px;
+}
+
+.head3{
+  font-family: Asar;
+  font-size: 40px;
+  padding-left: 560px;
+  margin-top: -260px;
+}
+
+.features1{
+  font-family: Asar;
+  padding-left: 560px;
+  padding-top: 40px;
+  font-size: 20px;
+  margin-right: 20px;
+}
+
+.byline3{
+  font-family: Asar;
+  padding-left: 560px;
+  padding-top: 40px;
+  font-size: 15px;
+  margin-right: 20px;
+}
+
+.secondfeatures img{
+  width: 39%;
+  height: 20%;
+  padding-left: 107px;
+  padding-top: 100px;
+}
+
+.head4{
+  font-family: Asar;
+  font-size: 40px;
+  padding-left: 650px;
+  margin-top: -200px;
+}
+
+.features2{
+  font-family: Asar;
+  padding-left: 650px;
+  padding-top: 40px;
+  font-size: 20px;
+  margin-right: 20px;
+}
+
+.byline4{
+  font-family: Asar;
+  padding-left: 650px;
+  padding-top: 40px;
+  font-size: 15px;
+  margin-right: 20px;
+}
+
+.opinionsdivide{
+  border: 0.1px solid darkred;
+  margin-top: 80px;
+}
+
+.opinions{
+  font-family: Asar;
+  font-size: 30px;
+  color: darkred;
+  padding-top: 50px;
+  padding-left: 100px;
+
+}
+
+.firstopinions img{
+  width: 40%;
+  height: 20%;
+  padding-left: 100px;
+  padding-top: 40px;
+}
+
+.head5 {
+  font-family: Asar;
+  font-size: 40px;
+  padding-left: 650px;
+  margin-top: -300px;
+  margin-right: 20px;
+
+}
+
+.opinions1{
+  font-family: Asar;
+  padding-left: 650px;
+  padding-top: 40px;
+  font-size: 20px;
+  margin-right: 20px;
+}
+
+.byline5{
+  font-family: Asar;
+  padding-left: 650px;
+  padding-top: 40px;
+  font-size: 15px;
+  margin-right: 20px;
+}
+
+.secondopinions img{
+  width: 40%;
+  height: 20%;
+  padding-left: 100px;
+  padding-top: 150px;
+}
+
+.head6{
+  font-family: Asar;
+  font-size: 40px;
+  padding-left: 650px;
+  margin-top: -250px;
+}
+
+.opinions2{
+  font-family: Asar;
+  padding-left: 650px;
+  padding-top: 40px;
+  font-size: 20px;
+  margin-right: 20px;
+}
+
+.byline6{
+  font-family: Asar;
+  padding-left: 650px;
+  padding-top: 40px;
+  font-size: 15px;
+  margin-right: 20px;
+}
+
+.Culture hr{
+  border: 1px solid darkred;
+  margin-top: 60px;
+
+}
+
+.Culture p{
+  font-family: Asar;
+  font-size: 15px;
+  padding-left: 10px;
+}
+
+.article img{
+  height: 20%;
+  width: 100%;
+  padding-top: 30px;
+
+}
+
+.article h6{
+  font-family: Asar;
+  font-size: 12px;
+  text-align: right;
+  padding-right: 20px;
+
+}
+
+.arts h1{
+  font-family: Asar;
+  font-size: 60px;
+  padding-top: 40px;
+  margin-left: 200px;
+
+}
+
+.arts h2{
+  font-family: Asar;
+  font-size: 20px;
+  padding-top: 20px;
+  margin-left: 200px;
+
+}
+
+.arts h4{
+  font-family: Asar;
+  padding-top: 40px;
+  margin-left: 200px;
+
+}
+
+.arts h5{
+  font-family: Asar;
+  padding-top: 20px;
+  margin-left: 200px;
+  font-size: 12px;
+
+}
+
+.storybody{
+  font-family: Asar;
+  font-size: 20px;
+  padding-top: 30px;
+  clear: left;
+
+}
+
+.storybody p{
+  margin-top: 20px;
+  margin-left: 200px;
+  margin-right: 280px;
+  line-height: 30px;
+  text-align: justify;
+  clear: left;
+
+
+}
+
+.storybody img{
+  height: 50%;
+  width: 40%;
+  float: right;
+  margin-right: 200px;
+  margin-top: 20px;
+
+}
+
+.img2 img{
+  height: 30%;
+  width: 40%;
+
+}
+
+.stafflist{
+  font-family: Asar;
+  font-size: 30px;
+  padding-top: 40px;
+  padding-left: 100px;
+}
+
+.photos li{
+  display: inline;
+
+}
+
+.photos img{
+  width: 300px;
+  height: 200px;
+  padding: 50px;
+
+}
+
+.names1 li{
+  display: inline;
+  padding-right: 100px;
+
+
+}
+
+.names1 ul{
+  font-family: Asar;
+  font-size: 20px;
+  padding: 60px;
+
+}
+
+.photos2 li{
+  display: inline;
+
+}
+
+.photos2 img{
+  width: 300px;
+  height: 200px;
+  padding: 50px;
+
+}
+
+.names2 li{
+  display: inline;
+  margin-left: 100px;
+
+
+
+
+}
+
+.names2 ul{
+  font-family: Asar;
+  font-size: 20px;
+  padding-left: 20px;
+
+
+
+}
+
+.footer {
+  position: relative;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin-top: 130px;
+  padding: 20px;
+  background-color: darkred;
+  text-align: center;
+  font-family: Asar;
+  font-size: 30px;
+}
+
+
+
+.footernsfp{
+  font-family: Asar;
+  font-size: 20px;
+  padding-right: 750px;
+  margin-top: 30px;
+}

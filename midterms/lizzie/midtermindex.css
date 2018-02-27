@@ -1,0 +1,39 @@
+
+header {
+	text-align: center;
+}
+
+h1 {
+	font-size: 100px;
+	margin: 200px 20px 20px 20px;
+	font-family: 'Cinzel', serif;
+}
+
+h1:hover {
+	background: #b3ccff;
+	color: white;
+	transition: .5s;
+}
+
+ul {
+	padding: 30px;
+}
+
+li {
+	margin: 30px;
+	font-size: 20px;
+	display: inline;
+	 color: #a6a6a6;
+}
+li:hover {
+	transform: scale(2.0);
+	border: black 1px;
+	padding: 5px;
+	transition: .2s;
+	color: red;
+	font-weight: bold;
+}
+
+a {
+	text-decoration: none;
+}
