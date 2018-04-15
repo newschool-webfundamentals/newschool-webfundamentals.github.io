@@ -1,0 +1,22 @@
+h1, h2, h3, h4, h5, h6 {
+	font-family: 'Montserrat', sans-serif;
+}
+
+p {
+	font-family: 'Open Sans', sans-serif;
+	font-size: 18px;
+	line-height: 1.5;
+}
+
+li {
+	display: inline;
+	margin: 20px;
+}
+
+a {
+	text-decoration: underline;
+}
+
+.section {
+	background-color: #c9dce0;
+}
