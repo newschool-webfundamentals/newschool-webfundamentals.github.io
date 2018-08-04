@@ -1,0 +1,47 @@
+h1 {
+	text-align: center;
+	font-size: ;
+	font-family: 'Patua One', cursive;
+}
+
+h2 {
+	text-align: center;
+	font-size: 25px;
+	font-family: 'Open Sans', sans-serif;
+}
+
+.byline {
+	font-size: 15px;
+	font-family: 'Patua One', cursive;
+	text-align: center;
+}
+
+.text {
+	font-size: 20px;
+	font-family: 'Open Sans', sans-serif;
+	line-height: 1.5;
+	max-width: 40em;
+}
+
+.img1 {
+	height: 500px;
+	width: 800px;
+	max-width: 100%;
+}
+
+.img2 {
+	height: 450px;
+	width: 650px;
+	max-width: 100%;
+}
+
+.img3 {
+	height: 1000px;
+	width: 650px;
+	max-width: 100%;
+}
+
+#container {
+  font-size: 20px;
+  color: blue;
+}
